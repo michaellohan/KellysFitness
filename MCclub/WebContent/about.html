@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US"><head><!-- Created by Artisteer v4.1.0.59861 -->
+    <meta charset="utf-8">
+    <title>About us:</title>
+    <meta name="viewport" content="initial-scale = 1.0, maximum-scale = 1.0, user-scalable = no, width = device-width">
+
+    <!--[if lt IE 9]><script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <link rel="stylesheet" href="style.css" media="screen">
+    <!--[if lte IE 7]><link rel="stylesheet" href="style.ie7.css" media="screen" /><![endif]-->
+    <link rel="stylesheet" href="style.responsive.css" media="all">
+
+
+    <script src="jquery.js"></script>
+    <script src="script.js"></script>
+    <script src="script.responsive.js"></script>
+
+
+
+<script>jQuery(function($) {
+    'use strict';
+    if ($.fn.slider) {
+        $(".art-slidecontainershutterstock_12539923").each(function () {
+            var slideContainer = $(this), tmp;
+            var inner = $(".art-slider-inner", slideContainer);
+            var helper = null;
+
+            if ($.support.transition) {
+                helper = new BackgroundHelper();
+                helper.init("vertical", "prev", $(".art-slide-item", inner).first().css($.support.transition.prefix + "transition-duration"));
+                inner.children().each(function () {
+                    helper.processSlide($(this), true);
+                });
+
+                var items = helper.items(helper.current(0), helper.next(0));
+                helper.setBackground(inner, items);
+                helper.setPosition(inner, items);
+
+                slideContainer.on("beforeSlide", function () {
+                    var activeItem = $(".active", this),
+                        nextItem = $(".next, .prev", this),
+                        activePos = $(".art-slide-item", this).index(activeItem),
+                        nextPos = $(".art-slide-item", this).index(nextItem);
+
+                    var currentItems = helper.items(helper.current(activePos), helper.current(nextPos));
+
+                    helper.transition(inner, false);
+                    helper.setBackground(inner, currentItems);
+                    helper.setPosition(inner, currentItems);
+                    if (inner.length) {
+                        tmp = inner.get(0).offsetHeight;
+                    }
+
+                    var movedCurrentItems = helper.items(helper.current(activePos), helper.current(nextPos), true);
+                    helper.transition(inner, true);
+                    helper.setPosition(inner, movedCurrentItems);
+                });
+            }
+
+
+            inner.children().eq(0).addClass("active");
+            slideContainer.slider({
+                pause: 2600,
+                speed: 600,
+                repeat: true,
+                animation: "vertical",
+                direction: "prev",
+                navigator: slideContainer.siblings(".art-slidenavigatorshutterstock_12539923"),
+                helper: helper                
+            });
+        });
+    }
+});
+</script><style>.art-content .art-postcontent-0 .layout-item-0 { margin-bottom: 10px;  }
+.art-content .art-postcontent-0 .layout-item-1 { border-spacing: 10px 0px; border-collapse: separate;  }
+.art-content .art-postcontent-0 .layout-item-2 { border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-color:#A6A6A6;border-right-color:#A6A6A6;border-bottom-color:#A6A6A6;border-left-color:#A6A6A6; padding-right: 10px;padding-left: 10px;  }
+.ie7 .art-post .art-layout-cell {border:none !important; padding:0 !important; }
+.ie6 .art-post .art-layout-cell {border:none !important; padding:0 !important; }
+
+.art-slidecontainershutterstock_12539923 {
+    position: relative;
+        width: 217px;
+    height: 217px;
+        }
+
+.art-slidecontainershutterstock_12539923 .art-slide-item
+{
+
+}
+
+
+.art-slidecontainershutterstock_12539923 .art-slide-item {
+    -webkit-transition: 600ms ease-in-out top;
+    -moz-transition: 600ms ease-in-out top;
+    -ms-transition: 600ms ease-in-out top;
+    -o-transition: 600ms ease-in-out top;
+    transition: 600ms ease-in-out top;
+    position: relative;
+    display: none;
+    width:  100%;
+    height: 100%;
+}
+
+.art-slidecontainershutterstock_12539923 .active, .art-slidecontainershutterstock_12539923 .next, .art-slidecontainershutterstock_12539923 .prev {
+    display: block;
+}
+
+.art-slidecontainershutterstock_12539923 .active {
+    top: 0;
+}
+
+.art-slidecontainershutterstock_12539923 .next, .art-slidecontainershutterstock_12539923 .prev {
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.art-slidecontainershutterstock_12539923 .next {
+    top: 100%;
+}
+
+.art-slidecontainershutterstock_12539923 .prev {
+    top: -100%;
+}
+
+.art-slidecontainershutterstock_12539923 .next.forward, .art-slidecontainershutterstock_12539923 .prev.back {
+    top: 0;
+}
+
+.art-slidecontainershutterstock_12539923 .active.forward {
+    top: -100%;
+}
+
+.art-slidecontainershutterstock_12539923 .active.back {
+    top: 100%;
+}
+
+
+
+.art-slideshutterstock_125399230 {
+    background-image:  url('images/slideshutterstock_125399230.jpg');
+        background-size:  100%;
+        background-position:  0 0;
+    background-repeat: no-repeat;
+}
+.art-slideshutterstock_125399231 {
+    background-image:  url('images/slideshutterstock_125399231.jpg');
+        background-size:  100%;
+        background-position:  0 0;
+    background-repeat: no-repeat;
+}
+.art-slideshutterstock_125399232 {
+    background-image:  url('images/slideshutterstock_125399232.png');
+        background-size:  100%;
+        background-position:  0 0;
+    background-repeat: no-repeat;
+}
+.art-slideshutterstock_125399233 {
+    background-image:  url('images/slideshutterstock_125399233.png');
+        background-size:  100%;
+        background-position:  0 0;
+    background-repeat: no-repeat;
+}
+
+
+.art-slidenavigatorshutterstock_12539923 {
+  display: inline-block;
+  position: absolute;
+  direction: ltr !important;
+  top: 193px;
+  left: 61.29%;
+  z-index: 101;
+  line-height: 0 !important;
+  -webkit-background-origin: border !important;
+  -moz-background-origin: border !important;
+  background-origin: border-box !important;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  text-align: center;
+    white-space: nowrap;
+    }
+.art-slidenavigatorshutterstock_12539923
+{
+background: #C7C7C7;background: linear-gradient(top, rgba(240, 240, 240, 0.6) 0, rgba(158, 158, 158, 0.6) 100%) no-repeat;background: -webkit-linear-gradient(top, rgba(240, 240, 240, 0.6) 0, rgba(158, 158, 158, 0.6) 100%) no-repeat;background: -moz-linear-gradient(top, rgba(240, 240, 240, 0.6) 0, rgba(158, 158, 158, 0.6) 100%) no-repeat;background: -o-linear-gradient(top, rgba(240, 240, 240, 0.6) 0, rgba(158, 158, 158, 0.6) 100%) no-repeat;background: -ms-linear-gradient(top, rgba(240, 240, 240, 0.6) 0, rgba(158, 158, 158, 0.6) 100%) no-repeat;background: linear-gradient(top, rgba(240, 240, 240, 0.6) 0, rgba(158, 158, 158, 0.6) 100%) no-repeat;-svg-background: linear-gradient(top, rgba(240, 240, 240, 0.6) 0, rgba(158, 158, 158, 0.6) 100%) no-repeat;
+-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;
+
+
+padding:7px;
+
+
+
+
+
+}
+.art-slidenavigatorshutterstock_12539923 > a
+{
+background: #949494;background: #949494;background: #949494;background: #949494;background: #949494;background: #949494;background: #949494;-svg-background: #949494;
+-webkit-border-radius:50%;-moz-border-radius:50%;border-radius:50%;
+
+
+
+margin:0 10px 0 0;
+
+width: 10px;
+
+height: 10px;
+}
+.art-slidenavigatorshutterstock_12539923 > a.active
+{
+background: #9EC8EA;background: #9EC8EA;background: #9EC8EA;background: #9EC8EA;background: #9EC8EA;background: #9EC8EA;background: #9EC8EA;-svg-background: #9EC8EA;
+-webkit-border-radius:50%;-moz-border-radius:50%;border-radius:50%;
+
+
+
+margin:0 10px 0 0;
+
+width: 10px;
+
+height: 10px;
+}
+.art-slidenavigatorshutterstock_12539923 > a:hover
+{
+background: #2572B1;background: #2572B1;background: #2572B1;background: #2572B1;background: #2572B1;background: #2572B1;background: #2572B1;-svg-background: #2572B1;
+-webkit-border-radius:50%;-moz-border-radius:50%;border-radius:50%;
+
+
+
+margin:0 10px 0 0;
+
+width: 10px;
+
+height: 10px;
+}
+
+</style></head>
+<body>
+<div id="art-main">
+<header class="art-header-about">
+
+
+    <div class="art-shapes">
+
+            </div>
+
+
+
+
+   
+                    
+</header>
+<nav class="art-nav">
+    <ul class="art-hmenu"><li><a href="home-2.html" class="">Home</a></li><li><a href="about.html" class="active">About</a></li><li><a href="contact-us.html">Contact Us</a></li><li><a href="membership.html">Membership</a></li><li><a href="login.jsp">Login</a></li></ul> 
+    </nav>
+<div class="art-sheet clearfix">
+            <div class="art-layout-wrapper">
+                <div class="art-content-layout">
+                    <div class="art-content-layout-row">
+                        <div class="art-layout-cell art-content"><article class="art-post art-article">
+                                <h2 class="art-postheader">About us:</h2>
+                                                
+                <div class="art-postcontent art-postcontent-0 clearfix"><div class="art-content-layout-wrapper layout-item-0">
+<div class="art-content-layout layout-item-1">
+    <div class="art-content-layout-row">
+    <div class="art-layout-cell layout-item-2" style="width: 50%" >
+        <p><span style="font-size: 16px; color: #000000;">We are an Awesome Gym but you have everything you need in your house to get in shape you don't need us. Here are some pictures of people that we paid to look happy. Oh! and some puppies.</span></p><p><br></p><p>
+         
+         
+        </p><p></p><div id="shutterstock_12539923" style="position: relative; display: inline-block; z-index: 0; margin: 0px;  border-width: 0px;  " class="art-collage">
+<div class="art-slider art-slidecontainershutterstock_12539923" data-width="217" data-height="217">
+    <div class="art-slider-inner">
+<div class="art-slide-item art-slideshutterstock_125399230">
+
+</div>
+<div class="art-slide-item art-slideshutterstock_125399231">
+
+</div>
+<div class="art-slide-item art-slideshutterstock_125399232">
+
+</div>
+<div class="art-slide-item art-slideshutterstock_125399233">
+
+</div>
+
+    </div>
+</div>
+<div class="art-slidenavigator art-slidenavigatorshutterstock_12539923" data-left="61.29">
+<a href="#" class="art-slidenavigatoritem"></a><a href="#" class="art-slidenavigatoritem"></a><a href="#" class="art-slidenavigatoritem"></a><a href="#" class="art-slidenavigatoritem"></a>
+</div>
+
+
+
+    </div>
+
+        
+         
+         
+         
+         
+         
+         
+         
+         
+        <p>
+        </p>
+    </div><div class="art-layout-cell layout-item-2" style="width: 50%" >
+        <p><iframe width="263" height="148" src="//www.youtube.com/embed/2uZQnhvf49o" frameborder="0"></iframe><br></p>
+        <p>This video has nothing to do with a gym or sports club in anyway, it's just funny.</p>
+    </div>
+    </div>
+</div>
+</div>
+</div>
+
+
+</article></div>
+                        <div class="art-layout-cell art-sidebar1"><div class="art-block clearfix">
+        <div class="art-blockheader">
+            <h3 class="t">Search</h3>
+        </div>
+        <div class="art-blockcontent"><div>
+  <form action="#" class="art-search" method="get" name="searchform">
+    <input type="text" value="" name="s" />
+    <input type="submit" value="Search" name="search" class="art-search-button" />
+  </form>
+</div></div>
+</div><div class="art-block clearfix">
+        <div class="art-blockheader">
+            <h3 class="t">Blogroll</h3>
+        </div>
+        <div class="art-blockcontent"><div>
+  <ul>
+    <li>
+      <a href="#">My first blog</a>
+    </li>
+    <li>
+      <a href="#">Who will prevail?</a>
+    </li>
+    <li>
+      <a href="#">Stay positive!</a>
+    </li>
+    <li>
+      <a href="#">Oil still going up</a>
+    </li>
+    <li>
+      <a href="#">Gripes and Grins</a>
+    </li>
+    <li>
+      <a href="#">2012 Olympics</a>
+    </li>
+    <li>
+      <a href="#">How to SEO</a>
+    </li>
+    <li>
+      <a href="#">On Global Warming</a>
+    </li>
+    <li>
+      <a href="#">Can you guess?</a>
+    </li>
+  </ul>
+</div></div>
+</div></div>
+                    </div>
+                </div>
+            </div><footer class="art-footer">
+<div class="art-content-layout">
+    <div class="art-content-layout-row">
+    <div class="art-layout-cell layout-item-0" style="width: 23%">
+        <p style="font: 18px Arial;">INFO</p>
+        <br>
+        <ul>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Team</a></li>
+        <li><a href="#">Prospects</a></li>
+        </ul>
+    </div><div class="art-layout-cell layout-item-0" style="width: 23%">
+        <p style="font: 18px Arial;">COMPANY</p>
+        <br>
+        <ul>
+        <li><a href="#">Directions</a></li>
+        <li><a href="#"></a><a href="#">Address</a></li>
+        <li><a href="#">Contacts</a></li>
+        </ul>
+    </div><div class="art-layout-cell layout-item-0" style="width: 18%">
+        <p style="font: 18px Arial;">FOLLOW</p>
+        <br>
+        <ul>
+        <li><a href="#"><img width="32" height="32" alt="" src="images/rss_32.png" class=""></a>&nbsp;<a href="#"><img width="32" height="32" alt="" src="images/facebook_32.png" class=""></a>&nbsp;<a href="#"><img width="32" height="32" alt="" src="images/twitter_32.png" class=""></a></li>
+        </ul>
+    </div><div class="art-layout-cell layout-item-0" style="width: 36%">
+        <p style="text-align: right;"><br></p>
+        <p style="text-align: right;"><br></p>
+        <p style="text-align: right;">Copyright © 2011-2012.&nbsp;</p>
+        <p style="text-align: right;">All Rights Reserved.<br></p>
+    </div>
+    </div>
+</div>
+
+</footer>
+
+    </div>
+    <p class="art-page-footer">
+        <span id="art-footnote-links"><a href="http://www.artisteer.com/" target="_blank">Web Template</a> created with Artisteer.</span>
+    </p>
+</div>
+
+
+</body></html>
